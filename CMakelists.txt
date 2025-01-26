@@ -1,16 +1,21 @@
 cmake_minimum_required(VERSION 3.10)
 cmake_policy(SET CMP0072 NEW)
+set(CMAKE_CXX_STANDARD 11)
 
 project(type-lock)
 
 find_package(OpenGL REQUIRED)
 find_package(GLEW REQUIRED)
+find_package(glm CONFIG REQUIRED)
 
 set(CMAKE_CXX_FLAGS "-std=c++11 -Wall -Wextra -Wpedantic")
 
 set(SOURCE main.cpp
     include/window.hpp src/window.cpp
-    include/solver.hpp src/solver.cpp)
+    include/solver.hpp src/solver.cpp
+    include/shader.hpp src/shader.cpp
+    include/graphics/shape.hpp src/graphics/shape.cpp
+    include/graphics/line.hpp)
 
 add_executable(${PROJECT_NAME} ${SOURCE})
 
@@ -20,4 +25,5 @@ target_link_libraries(${PROJECT_NAME}
     glfw3
     OpenGL::GL
     GLEW::GLEW
+    glm::glm
 )

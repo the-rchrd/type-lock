@@ -1,12 +1,19 @@
 #include "../include/window.hpp"
 
-tr::Window::Window(const std::string& title)
+tr::Window::Window(const char* title)
 {
     if (!glfwInit()) { return; } // init `glfw`
 
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
+    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+    #ifdef __APPLE__
+        glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
+    #endif
+    
     glfwWindowHint(GLFW_DOUBLEBUFFER, GLFW_TRUE); // window's `buffer^2` & `glfw = true`
 
-    window = glfwCreateWindow(800, 600, title.c_str(), NULL, NULL);
+    window = glfwCreateWindow(800, 600, title, NULL, NULL);
     if (!window) { return; }
     
     glfwMakeContextCurrent(window);
@@ -15,15 +22,22 @@ tr::Window::Window(const std::string& title)
     if (glewInit() != GLEW_OK) { return; } // init `glew` (we only can make it here)
 
     //>* set `background color` *<//
-    glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
+    glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
 }
-tr::Window::Window(const u_short& width, const u_short& height, const std::string& title)
+tr::Window::Window(const u_short& width, const u_short& height, const char* title)
 {
     if (!glfwInit()) { return; } // init `glfw`
+
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
+    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+    #ifdef __APPLE__
+        glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
+    #endif
     
     glfwWindowHint(GLFW_DOUBLEBUFFER, GLFW_TRUE); // window's `buffer^2` & `glfw = true`
 
-    window = glfwCreateWindow(width, height, title.c_str(), NULL, NULL);
+    window = glfwCreateWindow(width, height, title, NULL, NULL);
     if (!window) { return; }
     
     glfwMakeContextCurrent(window);
@@ -32,7 +46,7 @@ tr::Window::Window(const u_short& width, const u_short& height, const std::strin
     if (glewInit() != GLEW_OK) { return; } // init `glew` (we only can make it here)
 
     //>* set `background color` *<//
-    glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
+    glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
 }
 tr::Window::~Window()
 {

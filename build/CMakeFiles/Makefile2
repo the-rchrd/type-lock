@@ -85,12 +85,12 @@ clean: CMakeFiles/type-lock.dir/clean
 CMakeFiles/type-lock.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/type-lock.dir/build.make CMakeFiles/type-lock.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/type-lock.dir/build.make CMakeFiles/type-lock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/therchrd/Documents/Code/type-lock/build/CMakeFiles --progress-num=1,2,3,4 "Built target type-lock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/therchrd/Documents/Code/type-lock/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target type-lock"
 .PHONY : CMakeFiles/type-lock.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/type-lock.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/therchrd/Documents/Code/type-lock/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/therchrd/Documents/Code/type-lock/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/type-lock.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/therchrd/Documents/Code/type-lock/build/CMakeFiles 0
 .PHONY : CMakeFiles/type-lock.dir/rule
@@ -102,7 +102,7 @@ type-lock: CMakeFiles/type-lock.dir/rule
 # codegen rule for target.
 CMakeFiles/type-lock.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/type-lock.dir/build.make CMakeFiles/type-lock.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/therchrd/Documents/Code/type-lock/build/CMakeFiles --progress-num=1,2,3,4 "Finished codegen for target type-lock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/therchrd/Documents/Code/type-lock/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Finished codegen for target type-lock"
 .PHONY : CMakeFiles/type-lock.dir/codegen
 
 # clean rule for target.

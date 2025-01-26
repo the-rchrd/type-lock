@@ -256,6 +256,18 @@
 		{
 			"isExternal" : true,
 			"path" : "/opt/homebrew/lib/cmake/glew/CopyImportedTargetProperties.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/homebrew/share/glm/glmConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/homebrew/share/glm/glmConfig.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/homebrew/share/glm/glmConfig-release.cmake"
 		}
 	],
 	"kind" : "cmakeFiles",

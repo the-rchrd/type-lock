@@ -153,6 +153,54 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/type-lock.dir/build.make CMakeFiles/type-lock.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/graphics/shape.o: src/graphics/shape.cpp.o
+.PHONY : src/graphics/shape.o
+
+# target to build an object file
+src/graphics/shape.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/type-lock.dir/build.make CMakeFiles/type-lock.dir/src/graphics/shape.cpp.o
+.PHONY : src/graphics/shape.cpp.o
+
+src/graphics/shape.i: src/graphics/shape.cpp.i
+.PHONY : src/graphics/shape.i
+
+# target to preprocess a source file
+src/graphics/shape.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/type-lock.dir/build.make CMakeFiles/type-lock.dir/src/graphics/shape.cpp.i
+.PHONY : src/graphics/shape.cpp.i
+
+src/graphics/shape.s: src/graphics/shape.cpp.s
+.PHONY : src/graphics/shape.s
+
+# target to generate assembly for a file
+src/graphics/shape.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/type-lock.dir/build.make CMakeFiles/type-lock.dir/src/graphics/shape.cpp.s
+.PHONY : src/graphics/shape.cpp.s
+
+src/shader.o: src/shader.cpp.o
+.PHONY : src/shader.o
+
+# target to build an object file
+src/shader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/type-lock.dir/build.make CMakeFiles/type-lock.dir/src/shader.cpp.o
+.PHONY : src/shader.cpp.o
+
+src/shader.i: src/shader.cpp.i
+.PHONY : src/shader.i
+
+# target to preprocess a source file
+src/shader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/type-lock.dir/build.make CMakeFiles/type-lock.dir/src/shader.cpp.i
+.PHONY : src/shader.cpp.i
+
+src/shader.s: src/shader.cpp.s
+.PHONY : src/shader.s
+
+# target to generate assembly for a file
+src/shader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/type-lock.dir/build.make CMakeFiles/type-lock.dir/src/shader.cpp.s
+.PHONY : src/shader.cpp.s
+
 src/solver.o: src/solver.cpp.o
 .PHONY : src/solver.o
 
@@ -213,6 +261,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/graphics/shape.o"
+	@echo "... src/graphics/shape.i"
+	@echo "... src/graphics/shape.s"
+	@echo "... src/shader.o"
+	@echo "... src/shader.i"
+	@echo "... src/shader.s"
 	@echo "... src/solver.o"
 	@echo "... src/solver.i"
 	@echo "... src/solver.s"

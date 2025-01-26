@@ -114,11 +114,41 @@ CMakeFiles/type-lock.dir/src/solver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/type-lock.dir/src/solver.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/therchrd/Documents/Code/type-lock/src/solver.cpp -o CMakeFiles/type-lock.dir/src/solver.cpp.s
 
+CMakeFiles/type-lock.dir/src/shader.cpp.o: CMakeFiles/type-lock.dir/flags.make
+CMakeFiles/type-lock.dir/src/shader.cpp.o: /Users/therchrd/Documents/Code/type-lock/src/shader.cpp
+CMakeFiles/type-lock.dir/src/shader.cpp.o: CMakeFiles/type-lock.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/therchrd/Documents/Code/type-lock/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/type-lock.dir/src/shader.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/type-lock.dir/src/shader.cpp.o -MF CMakeFiles/type-lock.dir/src/shader.cpp.o.d -o CMakeFiles/type-lock.dir/src/shader.cpp.o -c /Users/therchrd/Documents/Code/type-lock/src/shader.cpp
+
+CMakeFiles/type-lock.dir/src/shader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/type-lock.dir/src/shader.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/therchrd/Documents/Code/type-lock/src/shader.cpp > CMakeFiles/type-lock.dir/src/shader.cpp.i
+
+CMakeFiles/type-lock.dir/src/shader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/type-lock.dir/src/shader.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/therchrd/Documents/Code/type-lock/src/shader.cpp -o CMakeFiles/type-lock.dir/src/shader.cpp.s
+
+CMakeFiles/type-lock.dir/src/graphics/shape.cpp.o: CMakeFiles/type-lock.dir/flags.make
+CMakeFiles/type-lock.dir/src/graphics/shape.cpp.o: /Users/therchrd/Documents/Code/type-lock/src/graphics/shape.cpp
+CMakeFiles/type-lock.dir/src/graphics/shape.cpp.o: CMakeFiles/type-lock.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/therchrd/Documents/Code/type-lock/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/type-lock.dir/src/graphics/shape.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/type-lock.dir/src/graphics/shape.cpp.o -MF CMakeFiles/type-lock.dir/src/graphics/shape.cpp.o.d -o CMakeFiles/type-lock.dir/src/graphics/shape.cpp.o -c /Users/therchrd/Documents/Code/type-lock/src/graphics/shape.cpp
+
+CMakeFiles/type-lock.dir/src/graphics/shape.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/type-lock.dir/src/graphics/shape.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/therchrd/Documents/Code/type-lock/src/graphics/shape.cpp > CMakeFiles/type-lock.dir/src/graphics/shape.cpp.i
+
+CMakeFiles/type-lock.dir/src/graphics/shape.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/type-lock.dir/src/graphics/shape.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/therchrd/Documents/Code/type-lock/src/graphics/shape.cpp -o CMakeFiles/type-lock.dir/src/graphics/shape.cpp.s
+
 # Object files for target type-lock
 type__lock_OBJECTS = \
 "CMakeFiles/type-lock.dir/main.cpp.o" \
 "CMakeFiles/type-lock.dir/src/window.cpp.o" \
-"CMakeFiles/type-lock.dir/src/solver.cpp.o"
+"CMakeFiles/type-lock.dir/src/solver.cpp.o" \
+"CMakeFiles/type-lock.dir/src/shader.cpp.o" \
+"CMakeFiles/type-lock.dir/src/graphics/shape.cpp.o"
 
 # External object files for target type-lock
 type__lock_EXTERNAL_OBJECTS =
@@ -126,11 +156,14 @@ type__lock_EXTERNAL_OBJECTS =
 type-lock: CMakeFiles/type-lock.dir/main.cpp.o
 type-lock: CMakeFiles/type-lock.dir/src/window.cpp.o
 type-lock: CMakeFiles/type-lock.dir/src/solver.cpp.o
+type-lock: CMakeFiles/type-lock.dir/src/shader.cpp.o
+type-lock: CMakeFiles/type-lock.dir/src/graphics/shape.cpp.o
 type-lock: CMakeFiles/type-lock.dir/build.make
 type-lock: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks/OpenGL.framework
 type-lock: /opt/homebrew/lib/libGLEW.2.2.0.dylib
+type-lock: /opt/homebrew/lib/libglm.dylib
 type-lock: CMakeFiles/type-lock.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/therchrd/Documents/Code/type-lock/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable type-lock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/therchrd/Documents/Code/type-lock/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable type-lock"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/type-lock.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

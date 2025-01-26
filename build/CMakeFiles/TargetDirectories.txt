@@ -1,0 +1,3 @@
+/Users/therchrd/Documents/Code/type-lock/build/CMakeFiles/type-lock.dir
+/Users/therchrd/Documents/Code/type-lock/build/CMakeFiles/edit_cache.dir
+/Users/therchrd/Documents/Code/type-lock/build/CMakeFiles/rebuild_cache.dir

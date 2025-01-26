@@ -1,0 +1,23 @@
+cmake_minimum_required(VERSION 3.10)
+cmake_policy(SET CMP0072 NEW)
+
+project(type-lock)
+
+find_package(OpenGL REQUIRED)
+find_package(GLEW REQUIRED)
+
+set(CMAKE_CXX_FLAGS "-std=c++11 -Wall -Wextra -Wpedantic")
+
+set(SOURCE main.cpp
+    include/window.hpp src/window.cpp
+    include/solver.hpp src/solver.cpp)
+
+add_executable(${PROJECT_NAME} ${SOURCE})
+
+target_link_libraries(${PROJECT_NAME}
+    "-framework Cocoa"
+    "-framework IOKit"
+    glfw3
+    OpenGL::GL
+    GLEW::GLEW
+)

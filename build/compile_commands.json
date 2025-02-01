@@ -19,14 +19,14 @@
 },
 {
   "directory": "/Users/therchrd/Documents/Code/type-lock/build",
-  "command": "/usr/bin/clang++  -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks -isystem /opt/homebrew/include -std=c++11 -Wall -Wextra -Wpedantic -g -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -F/Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk/System/Library/Frameworks  -o CMakeFiles/type-lock.dir/src/shader.cpp.o -c /Users/therchrd/Documents/Code/type-lock/src/shader.cpp",
-  "file": "/Users/therchrd/Documents/Code/type-lock/src/shader.cpp",
-  "output": "CMakeFiles/type-lock.dir/src/shader.cpp.o"
+  "command": "/usr/bin/clang++  -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks -isystem /opt/homebrew/include -std=c++11 -Wall -Wextra -Wpedantic -g -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -F/Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk/System/Library/Frameworks  -o CMakeFiles/type-lock.dir/src/graphics/inheritance/shader.cpp.o -c /Users/therchrd/Documents/Code/type-lock/src/graphics/inheritance/shader.cpp",
+  "file": "/Users/therchrd/Documents/Code/type-lock/src/graphics/inheritance/shader.cpp",
+  "output": "CMakeFiles/type-lock.dir/src/graphics/inheritance/shader.cpp.o"
 },
 {
   "directory": "/Users/therchrd/Documents/Code/type-lock/build",
-  "command": "/usr/bin/clang++  -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks -isystem /opt/homebrew/include -std=c++11 -Wall -Wextra -Wpedantic -g -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -F/Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk/System/Library/Frameworks  -o CMakeFiles/type-lock.dir/src/graphics/shape.cpp.o -c /Users/therchrd/Documents/Code/type-lock/src/graphics/shape.cpp",
-  "file": "/Users/therchrd/Documents/Code/type-lock/src/graphics/shape.cpp",
-  "output": "CMakeFiles/type-lock.dir/src/graphics/shape.cpp.o"
+  "command": "/usr/bin/clang++  -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks -isystem /opt/homebrew/include -std=c++11 -Wall -Wextra -Wpedantic -g -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -F/Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk/System/Library/Frameworks  -o CMakeFiles/type-lock.dir/src/graphics/inheritance/shape.cpp.o -c /Users/therchrd/Documents/Code/type-lock/src/graphics/inheritance/shape.cpp",
+  "file": "/Users/therchrd/Documents/Code/type-lock/src/graphics/inheritance/shape.cpp",
+  "output": "CMakeFiles/type-lock.dir/src/graphics/inheritance/shape.cpp.o"
 }
 ]

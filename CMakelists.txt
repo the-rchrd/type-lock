@@ -13,9 +13,10 @@ set(CMAKE_CXX_FLAGS "-std=c++11 -Wall -Wextra -Wpedantic")
 set(SOURCE main.cpp
     include/window.hpp src/window.cpp
     include/solver.hpp src/solver.cpp
-    include/shader.hpp src/shader.cpp
-    include/graphics/shape.hpp src/graphics/shape.cpp
-    include/graphics/line.hpp)
+    include/graphics/inheritance/shader.hpp src/graphics/inheritance/shader.cpp
+    include/graphics/inheritance/shape.hpp src/graphics/inheritance/shape.cpp
+    include/graphics/line.hpp
+    include/graphics/rect.hpp)
 
 add_executable(${PROJECT_NAME} ${SOURCE})
 

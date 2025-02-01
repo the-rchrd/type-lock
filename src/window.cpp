@@ -17,7 +17,7 @@ tr::Window::Window(const char* title)
     if (!window) { return; }
     
     glfwMakeContextCurrent(window);
-    glfwSwapInterval(1); // `vert-sync` on
+    //glfwSwapInterval(1); // `vert-sync` on
 
     if (glewInit() != GLEW_OK) { return; } // init `glew` (we only can make it here)
 
@@ -41,7 +41,7 @@ tr::Window::Window(const u_short& width, const u_short& height, const char* titl
     if (!window) { return; }
     
     glfwMakeContextCurrent(window);
-    glfwSwapInterval(1); // `vert-sync` on
+    //glfwSwapInterval(1); // `vert-sync` on
 
     if (glewInit() != GLEW_OK) { return; } // init `glew` (we only can make it here)
 

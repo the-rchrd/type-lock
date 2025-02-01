@@ -1,4 +1,4 @@
-#include "../../include/graphics/shape.hpp"
+#include "../../../include/graphics/inheritance/shape.hpp"
 
 tr::Shape::Shape()
 {
@@ -19,6 +19,30 @@ glm::vec3& tr::Shape::get_point(const size_t& i) { return points[i]; }
 
 void tr::Shape::clear() { points.clear(); colors.clear(); }
 
+void tr::Shape::insert(const glm::vec3& p)
+{
+    glm::vec3 point = p;
+    glm::vec3 color = { 1.0f, 1.0f, 1.0f };
+
+    points.push_back(point);
+    colors.push_back(color);
+}
+void tr::Shape::insert(const glm::vec3& p, const glm::vec3& c)
+{
+    glm::vec3 point = p;
+    glm::vec3 color = c;
+
+    points.push_back(point);
+    colors.push_back(color);
+}
+void tr::Shape::insert(const glm::vec3& p, const u_short& r, const u_short& g, const u_short& b)
+{
+    glm::vec3 point = p;
+    glm::vec3 color = { r / 255.0f, g / 255.0f, b / 255.0f};
+
+    points.push_back(point);
+    colors.push_back(color);
+}
 void tr::Shape::insert(const float& x, const float& y)
 {
     glm::vec3 point = { x, y, 0.0f };
@@ -30,7 +54,7 @@ void tr::Shape::insert(const float& x, const float& y)
 void tr::Shape::insert(const float& x, const float& y, const u_short& r, const u_short& g, const u_short& b)
 {
     glm::vec3 point = { x, y, 0.0f };
-    glm::vec3 color = { r, g, b };
+    glm::vec3 color = { r / 255.0f, g / 255.0f, b / 255.0f };
 
     points.push_back(point);
     colors.push_back(color);

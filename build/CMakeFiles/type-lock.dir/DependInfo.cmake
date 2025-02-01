@@ -9,8 +9,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/therchrd/Documents/Code/type-lock/main.cpp" "CMakeFiles/type-lock.dir/main.cpp.o" "gcc" "CMakeFiles/type-lock.dir/main.cpp.o.d"
-  "/Users/therchrd/Documents/Code/type-lock/src/graphics/shape.cpp" "CMakeFiles/type-lock.dir/src/graphics/shape.cpp.o" "gcc" "CMakeFiles/type-lock.dir/src/graphics/shape.cpp.o.d"
-  "/Users/therchrd/Documents/Code/type-lock/src/shader.cpp" "CMakeFiles/type-lock.dir/src/shader.cpp.o" "gcc" "CMakeFiles/type-lock.dir/src/shader.cpp.o.d"
+  "/Users/therchrd/Documents/Code/type-lock/src/graphics/inheritance/shader.cpp" "CMakeFiles/type-lock.dir/src/graphics/inheritance/shader.cpp.o" "gcc" "CMakeFiles/type-lock.dir/src/graphics/inheritance/shader.cpp.o.d"
+  "/Users/therchrd/Documents/Code/type-lock/src/graphics/inheritance/shape.cpp" "CMakeFiles/type-lock.dir/src/graphics/inheritance/shape.cpp.o" "gcc" "CMakeFiles/type-lock.dir/src/graphics/inheritance/shape.cpp.o.d"
   "/Users/therchrd/Documents/Code/type-lock/src/solver.cpp" "CMakeFiles/type-lock.dir/src/solver.cpp.o" "gcc" "CMakeFiles/type-lock.dir/src/solver.cpp.o.d"
   "/Users/therchrd/Documents/Code/type-lock/src/window.cpp" "CMakeFiles/type-lock.dir/src/window.cpp.o" "gcc" "CMakeFiles/type-lock.dir/src/window.cpp.o.d"
   )

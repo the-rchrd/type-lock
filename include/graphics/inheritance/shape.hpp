@@ -6,8 +6,8 @@
 #include <GLFW/glfw3.h>
 #include <glm/glm.hpp>
 
-#include "../../interfaces/i_updater.hpp"
-#include "../../interfaces/i_drawer.hpp"
+#include "../../../interfaces/i_updater.hpp"
+#include "../../../interfaces/i_drawer.hpp"
 
 namespace tr
 {
@@ -21,6 +21,9 @@ namespace tr
 
         glm::vec3& get_point(const size_t& i);
 
+        void insert(const glm::vec3& p);
+        void insert(const glm::vec3& p, const glm::vec3& c);
+        void insert(const glm::vec3& p, const u_short& r, const u_short& g, const u_short& b);
         void insert(const float& x, const float& y);
         void insert(const float& x, const float& y, const u_short& r, const u_short& g, const u_short& b);
 
@@ -33,8 +36,8 @@ namespace tr
         std::vector<glm::vec3>  points;
         std::vector<glm::vec3>  colors;
 
-        GLuint                  points_vbo;
-        GLuint                  colors_vbo;
-        GLuint                  vao;
+        GLuint points_vbo;
+        GLuint colors_vbo;
+        GLuint vao;
     };
 }
